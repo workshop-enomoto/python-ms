@@ -6,7 +6,7 @@ import socket
 app = Flask(__name__)
 
 @app.route('/hello-python')
-def hello():
+def helloWorld():
     with counter.get_lock():
         counter.value += 1
         unique_count = counter.value    
